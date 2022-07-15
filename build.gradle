@@ -25,4 +25,10 @@ repositories {
 dependencies {
     implementation('org.springframework.boot:spring-boot-starter-web')
     testImplementation('org.springframework.boot:spring-boot-starter-test')
+
+    // Gradle 6 이상부터는 아래와 같이 명시한다. (현 프로젝트는 7)
+    implementation('org.projectlombok:lombok')
+    testImplementation('org.projectlombok:lombok')
+    annotationProcessor('org.projectlombok:lombok')
+    testAnnotationProcessor('org.projectlombok:lombok')
 }
